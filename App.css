@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+}
+body{
+  font-family: 'Amatic SC', cursive;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 50px;
+  color: #fcf9e2;
+}
+.form{
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+button{
+  margin-left: 2rem;
+  color: #242423;
+  background-color: #9fe084;
+  padding: 10px;
+  width: 85px;
+  border: none;
+  border-radius: 10px;
+}
+input[type="text"]{
+  padding: 6px;
+  border: none;
+  width: 300px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+      flex-direction: column;
+    }
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.city-date-temp, .other-info{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.city-name{
+  font-weight: 700;
+  font-size: 120px;
+  letter-spacing: 0.75rem;
+  margin-bottom: 1rem;
+}
+.date{
+  word-spacing: 2rem;
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+.temp{
+  font-size: 75px;
+  font-weight: 700;
+}
+.feels-like > span{
+  font-weight: 700;
+  font-size: 55px;
+  margin-right: 0.75rem;
+}
+.others{
+  display: flex;
+  width: 40%;
+  font-size: 45px;
+  font-weight: 400;
+  margin: auto;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  text-align: center;
+}
+.othersval{
+  font-weight: 700;
+}
+.max-min{
+  display: flex;
+  width: 40%;
+  margin: auto;
+  justify-content: space-between;
+}
+.max-min > div{
+  margin-left: 0.75rem;
+}
+
+@media screen and (max-width: 700px)
+{
+  .city-date-five{
+    flex-direction: column;
+  }
+  .dets{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+  }
+  .data-five{
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 90% !important;
+    margin: auto !important;
+  }
+  .dates{
+    visibility: hidden;
+  }
+  .data-child{
+    width: 100% !important;
+  }
+}
+
+
+.city-date-five{
+  position: relative;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.75rem;
+}
+.city-five{
+  font-size: 120px;
+}
+.data-five{
+  display: flex;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.data-child{
+  padding: 2rem 0.75rem;
+  font-size: 40px;
+  width: 18%;
+  border-radius: 24px;
+  background-color: hsl(187, 51%, 86%);
+  color: #242423;
+  margin-bottom: 3rem;
+}
+.dates{
+  background-color: hsla(60, 1%, 14%, 0.5);
+  color: #fcf9e2;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.data-child > div:nth-child(1)
+{
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.data-child > div:last-child{
+  margin-top: 2rem;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+}
+.data-five > .data-child > div:nth-child(2), .data-five > .data-child > div:nth-child(3){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.data-child span{
+  font-size: 30px;
+  margin-left: 0.25rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
